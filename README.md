@@ -84,3 +84,24 @@ Para <img src="https://latex.codecogs.com/svg.image?u_0<K" title="u_0<K" />
 Para <img src="https://latex.codecogs.com/svg.image?u_0>K" title="u_0>K" />:
 
 ![Gráfico da Solução](https://github.com/joaovvflauzino/Primeiros-Programas-Julia/blob/main/Graphic%20EDO5.png)
+
+
+## EDO 6 <img src="https://latex.codecogs.com/svg.image?\dot&space;u&space;=&space;u-u^3" title="\dot u = u-u^3" />
+É o exemplo 2.7.2 do Strogatz.
+```
+using DifferentialEquations
+f(u,p,t) = u-u^3
+u0 = 1/2
+tspan = (-5.0,5.0)
+prob = ODEProblem(f,u0,tspan)
+sol = solve(prob)
+
+using Plots
+plot(sol,linewidth=5, title="Solution to the u̇=u-u³, with u₀=1/2",
+     xaxis="t",yaxis="u(t)", label="Solução pelo Julia",legend=:bottomright)
+savefig("Graphic EDO6.png")
+```
+![Gráfico da solução](https://github.com/joaovvflauzino/Primeiros-Programas-Julia/blob/main/Graphic%20EDO6.png)
+
+
+
