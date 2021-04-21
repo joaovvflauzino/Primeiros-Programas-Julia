@@ -1,7 +1,7 @@
 # Primeiros-Programas-Julia
 
-##EDO 1
-<img src="https://latex.codecogs.com/svg.image?\dot&space;u&space;=&space;u(1-u)" title="\dot u = u(1-u)" />
+## EDO 1 <img src="https://latex.codecogs.com/svg.image?\dot&space;u&space;=&space;u(1-u)" title="\dot u = u(1-u)" />
+
 O senhor citou essa EDO na última reunião enquanto passava pelo livro e disse que eu poderia começar por ela. Anotei e fiz como segue.
 ```
 using DifferentialEquations
