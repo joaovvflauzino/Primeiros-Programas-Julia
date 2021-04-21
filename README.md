@@ -1,6 +1,7 @@
 # Primeiros-Programas-Julia
 
-##EDO 1: <img src="https://latex.codecogs.com/svg.image?\dot&space;u&space;=&space;u(1-u)" title="\dot u = u(1-u)" />
+##EDO 1
+<img src="https://latex.codecogs.com/svg.image?\dot&space;u&space;=&space;u(1-u)" title="\dot u = u(1-u)" />
 O senhor citou essa EDO na última reunião enquanto passava pelo livro e disse que eu poderia começar por ela. Anotei e fiz como segue.
 ```
 using DifferentialEquations
@@ -16,4 +17,5 @@ plot(sol, title="Solution to the u̇=u(1-u), with u₀=$u0",
 savefig("Graphic EDO1.png")
 ```
 Foi gerado o gráfico:
+
 ![Gráfico da Solução](https://github.com/joaovvflauzino/Primeiros-Programas-Julia/blob/main/Graphic%20EDO1.png)
