@@ -33,7 +33,7 @@ sol = solve(prob)
 
 using Plots
 plot(sol,linewidth=5, title="Solution to the u̇=sin(u), with u₀=π/4",
-     xaxis="t",yaxis="u(t)", label="Solução pelo Julia")
+     xaxis="t",yaxis="u(t)", label="Solução pelo Julia",legend=:bottomright)
 plot!(sol.t,linewidth=4,ls=:dash, t->2*atan(exp(t)/(1+√2)), label="Solução analítica")
 plot!(t->π,lw=2, ls=:dash, label="π")
 savefig("Graphic EDO2.png")
