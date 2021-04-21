@@ -1,5 +1,7 @@
 # Primeiros-Programas-Julia
 
+
+
 ## EDO 1 <img src="https://latex.codecogs.com/svg.image?\dot&space;u&space;=&space;u(1-u)" title="\dot u = u(1-u)" />
 
 O senhor citou essa EDO na última reunião enquanto passava pelo livro e disse que eu poderia começar por ela. Anotei e fiz como segue.
@@ -19,6 +21,8 @@ savefig("Graphic EDO1.png")
 Foi gerado o gráfico:
 
 ![Gráfico da Solução](https://github.com/joaovvflauzino/Primeiros-Programas-Julia/blob/main/Graphic%20EDO1.png)
+
+
 
 ## EDO 2 <img src="https://latex.codecogs.com/svg.image?\dot&space;u&space;=&space;sin&space;(u)" title="\dot u = sin (u)" />
 
@@ -41,6 +45,8 @@ savefig("Graphic EDO2.png")
 ```
 Esbocei ela usando Julia. Resolvi ela analiticamente (escrevi U em função de t) e coloquei por cima do gráfico anterior, junto com a assíntota (em que u = π).
 ![Gráfico da Solução](https://github.com/joaovvflauzino/Primeiros-Programas-Julia/blob/main/Graphic%20EDO2.png)
+
+
 
 ## EDO 3 <img src="https://latex.codecogs.com/svg.image?\dot&space;u=&space;u^2-1" title="\dot u= u^2-1" />
 EDO do exemplo 2.2.1
