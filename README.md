@@ -16,4 +16,4 @@ plot(sol, title="Solution to the u̇=u(1-u), with u₀=$u0",
 savefig("Graphic EDO1.png")
 ```
 Foi gerado o gráfico:
-![Alt Gráfico da EDO](Graphic EDO1.png)
+![Gráfico da Solução](https://github.com/joaovvflauzino/Primeiros-Programas-Julia/blob/main/Graphic%20EDO1.png)
