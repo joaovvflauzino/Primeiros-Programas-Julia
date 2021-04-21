@@ -78,3 +78,5 @@ plot(sol,linewidth=5, title="Solution to the u̇=ru(1-u/k), with u₀=2, K=500, 
 savefig("Graphic EDO4.png")
 ```
 ![Gráfico da Solução](https://github.com/joaovvflauzino/Primeiros-Programas-Julia/blob/main/Graphic%20EDO4.png)
+Para <img src="https://latex.codecogs.com/svg.image?u_0>K" title="u_0>K" />:
+![Gráfico da Solução](https://github.com/joaovvflauzino/Primeiros-Programas-Julia/blob/main/Graphic%20EDO5.png)
