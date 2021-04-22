@@ -123,4 +123,52 @@ Gerou:
 
 ![Gráfico da solução](https://github.com/joaovvflauzino/Primeiros-Programas-Julia/blob/main/Graphic%20EDO7.png)
 
+## EDO 8 <img src="https://latex.codecogs.com/svg.image?\dot&space;x&space;=&space;1-x^{14}" title="\dot x = 1-x^{14}" />
+Exercício 2.2.2
+```
+using DifferentialEquations, Plots
 
+for i = -1.0:0.25:1.5
+    f(x,p,t) = 1-x^14
+    x0 = i
+    tspan = (0.00,1.00)
+    prob = ODEProblem(f,x0,tspan)
+    sol = solve(prob)
+    if i==-1.0
+        plot(sol,linewidth=4, title="Solution",
+             xaxis="t",yaxis="x(t)",legend=false)
+    else
+        plot!(sol,linewidth=4, title="Solution",
+            xaxis="t",yaxis="x(t)",legend=false)
+    end
+end
+savefig("Graphic EDO8.png")
+```
+Gerou:
+
+![Gráfico da solução](https://github.com/joaovvflauzino/Primeiros-Programas-Julia/blob/main/Graphic%20EDO8.png)
+
+## EDO 9 <img src="https://latex.codecogs.com/svg.image?\dot&space;x&space;=&space;x-x^3" title="\dot x = x-x^3" />
+Exercício 2.2.3
+```
+using DifferentialEquations, Plots
+
+for i = -2.00:0.25:2.00
+    f(x,p,t) = x-x^3
+    x0 = i
+    tspan = (0.00,2.00)
+    prob = ODEProblem(f,x0,tspan)
+    sol = solve(prob)
+    if i==-2.00
+        plot(sol,linewidth=4, title="Solution",
+             xaxis="t",yaxis="x(t)",legend=false)
+    else
+        plot!(sol,linewidth=4, title="Solution",
+            xaxis="t",yaxis="x(t)",legend=false)
+    end
+end
+savefig("Graphic EDO9.png")
+```
+Gerou:
+
+![Gráfico da solução](https://github.com/joaovvflauzino/Primeiros-Programas-Julia/blob/main/Graphic%20EDO9.png)
