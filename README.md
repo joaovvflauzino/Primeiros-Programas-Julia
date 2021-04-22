@@ -120,6 +120,7 @@ end
 savefig("Graphic EDO7.png")
 ```
 Gerou:
+
 ![Gráfico da solução](https://github.com/joaovvflauzino/Primeiros-Programas-Julia/blob/main/Graphic%20EDO7.png)
 
 
