@@ -103,5 +103,23 @@ savefig("Graphic EDO6.png")
 ```
 ![Gráfico da solução](https://github.com/joaovvflauzino/Primeiros-Programas-Julia/blob/main/Graphic%20EDO6.png)
 
+## EDO 7 <img src="https://latex.codecogs.com/svg.image?\dot&space;u&space;=&space;4u^2-16" title="\dot u = 4u^2-16" />
+Equação do exercício 2.2.1
+```
+using DifferentialEquations, Plots
+
+for i = -4.00:0.5:2
+    f(u,p,t) = 4*u^2-16
+    u0 = i
+    tspan = (0.00,1.00)
+    prob = ODEProblem(f,u0,tspan)
+    sol = solve(prob)
+plot!(sol,linewidth=4, title="Solution",
+     xaxis="t",yaxis="u(t)",legend=false)
+end
+savefig("Graphic EDO7.png")
+```
+Gerou:
+![Gráfico da solução](https://github.com/joaovvflauzino/Primeiros-Programas-Julia/blob/main/Graphic%20EDO7.png)
 
 
